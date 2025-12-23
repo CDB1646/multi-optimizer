@@ -1,23 +1,41 @@
-# Ultimate Optimizer Website
+# Ultimate Optimizer
 
-The premium landing page for [Ultimate Optimizer](https://github.com/CDB1646/multi-optimizer).
+Ultimate Optimizer is a premium Windows optimization tool that combines various tweaks from industry-standard tools into a modern, hardware-aware UI.
 
-## 🚀 Features
-- **Modern UI:** Built with Tailwind CSS, Alpine.js, and AOS.
-- **Hardware Aware Sections:** Intel, AMD, and NVIDIA specific highlights.
-- **Interactive:** Preloader, Particles.js background, and SweetAlert2 dialogs.
-- **Fast:** Lightweight static assets optimized for speed.
+## Features
 
-## 📦 Deployment to GitHub Pages
-1. Push this code to the `main` or `gh-pages` branch.
-2. Go to **Settings > Pages**.
-3. Select the branch and click **Save**.
+- **Hardware Aware:** Automatically detects CPU (Intel/AMD) and GPU (NVIDIA/AMD) to show relevant tweaks.
+- **Premium UI:** Modern, borderless window with glassmorphism, smooth animations, and SVG assets.
+- **Tweak Engine:** Comprehensive system optimizations including:
+  - Telemetry & Debloat
+  - Gaming & Latency (Win32 Priority Separation, MMCSS)
+  - Privacy Enhancements
+  - GPU Specific fixes (MPO Fix, NVIDIA Ansel, AMD ULPS)
+  - CPU Power Management
+- **Update System:** Integrated update checker connected to GitHub Releases with changelog display.
+- **Logging:** All system changes are logged to `log-data.log` for transparency.
 
-## 🛠 Tech Stack
-- Tailwind CSS
-- Alpine.js
-- jQuery
-- AOS (Animate on Scroll)
-- Particles.js
-- SweetAlert2
-- Toastr
+## Technology Stack
+
+- **Backend:** Python 3.x
+- **UI Framework:** PySide6 (Qt6)
+- **APIs:** WMI, WinReg, Windows API (ctypes)
+- **Assets:** SVG icons and PNG logos.
+
+## Installation
+
+1. Run the `UltimateOptimizer.exe` from the Releases page.
+2. Run with Administrator privileges (the app will prompt you).
+
+## Development
+
+To run from source:
+```bash
+pip install PySide6 wmi
+python main.py
+```
+
+To build the EXE:
+```bash
+build_exe.bat
+```
