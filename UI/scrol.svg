@@ -1,38 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="120" viewBox="0 0 20 120">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="200" viewBox="0 0 40 200">
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00c7fd" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#222" stop-opacity="0.8"/>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00fbff" />
+      <stop offset="50%" stop-color="#007bff" />
+      <stop offset="100%" stop-color="transparent" />
     </linearGradient>
+
     <style>
-      .track {
+      .bg-track {
+        fill: #1a1a1a;
+      }
+      .track-line {
         fill: #333;
-        rx: 10;
-        ry: 10;
+        rx: 1;
       }
       .thumb {
-        fill: url(#grad);
-        rx: 8;
-        ry: 8;
-        transition: transform 0.3s ease, filter 0.3s ease;
-        transform-origin: center top;
+        fill: url(#glowGrad);
+        rx: 2;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        filter: drop-shadow(0 0 2px rgba(0, 251, 255, 0.3));
       }
+      
+      /* Hover durumunda canlanma ve parlama */
       svg:hover .thumb {
-        transform: translateY(0px) scaleY(1.2);
-        filter: drop-shadow(0 0 6px #00c7fd);
-        animation: scrollMove 2s infinite alternate;
+        filter: drop-shadow(0 0 8px #00fbff);
+        animation: scrollPulse 2.5s infinite ease-in-out;
       }
 
-      @keyframes scrollMove {
-        0% { transform: translateY(0px) scaleY(1.2); }
-        100% { transform: translateY(40px) scaleY(1.2); }
+      @keyframes scrollPulse {
+        0%, 100% { transform: translateY(0); opacity: 0.8; }
+        50% { transform: translateY(110px); opacity: 1; }
       }
     </style>
   </defs>
 
-  <!-- Track -->
-  <rect class="track" x="5" y="0" width="10" height="120"/>
+  <rect class="bg-track" width="40" height="200" />
+  
+  <rect class="track-line" x="19" y="10" width="2" height="180" opacity="0.5" />
 
-  <!-- Thumb -->
-  <rect class="thumb" x="6" y="0" width="8" height="40"/>
+  <rect class="thumb" x="18" y="10" width="4" height="70" />
 </svg>

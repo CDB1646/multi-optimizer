@@ -1,0 +1,25 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M80 10
+           L140 35
+           V80
+           C140 115 105 140 80 150
+           C55 140 20 115 20 80
+           V35 Z"
+        fill="url(#g)"/>
+
+  <!-- Pulse line -->
+  <polyline points="35,85 55,85 65,65 75,105 90,55 105,85 125,85"
+            fill="none"
+            stroke="#0f172a"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+</svg>

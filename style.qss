@@ -13,15 +13,15 @@ QWidget {
     background-image: url("UI/uı.svg");
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 40px;
+    border-radius: 45px;
     border: 1px solid rgba(138, 43, 226, 0.4);
 }
 
 /* Sol Menü */
 #Sidebar {
-    background-color: rgba(10, 10, 10, 0.85);
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    background-color: rgba(5, 5, 5, 0.88);
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
     border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -89,11 +89,18 @@ QWidget {
 }
 
 /* Sayfa İçeriği */
+#PageBanner {
+    border-bottom: 2px solid rgba(138, 43, 226, 0.4);
+    border-top-right-radius: 45px;
+}
+
 #PageTitle {
     font-size: 32px;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 25px;
+    padding: 30px 40px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0,0,0,0), stop:1 rgba(0,0,0,0.8));
+    margin-bottom: 0px;
 }
 
 /* Ayar Satırları */
@@ -135,4 +142,32 @@ QScrollBar::handle:vertical {
 }
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     height: 0px;
+}
+
+/* Dialog & Message Boxes */
+QMessageBox, QDialog {
+    background-color: #0d0d0d;
+    border: 1px solid rgba(138, 43, 226, 0.6);
+    border-radius: 15px;
+}
+
+QMessageBox QLabel {
+    color: #ffffff;
+    font-size: 13px;
+    background: transparent;
+}
+
+QMessageBox QPushButton {
+    background-color: rgba(138, 43, 226, 0.2);
+    border: 1px solid rgba(138, 43, 226, 0.4);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    min-width: 80px;
+    font-weight: bold;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #8a2be2;
+    border: 1px solid #ffffff;
 }
