@@ -1,0 +1,417 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Şimşek simgesi -->
+  <polygon points="50,5 65,45 55,45 70,95 35,55 45,55 30,5" fill="yellow" stroke="orange" stroke-width="2"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="200" viewBox="0 0 40 200">
+  <defs>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00fbff" />
+      <stop offset="50%" stop-color="#007bff" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+
+    <style>
+      .bg-track {
+        fill: #1a1a1a;
+      }
+      .track-line {
+        fill: #333;
+        rx: 1;
+      }
+      .thumb {
+        fill: url(#glowGrad);
+        rx: 2;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        filter: drop-shadow(0 0 2px rgba(0, 251, 255, 0.3));
+      }
+      
+      /* Hover durumunda canlanma ve parlama */
+      svg:hover .thumb {
+        filter: drop-shadow(0 0 8px #00fbff);
+        animation: scrollPulse 2.5s infinite ease-in-out;
+      }
+
+      @keyframes scrollPulse {
+        0%, 100% { transform: translateY(0); opacity: 0.8; }
+        50% { transform: translateY(110px); opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg-track" width="40" height="200" />
+  
+  <rect class="track-line" x="19" y="10" width="2" height="180" opacity="0.5" />
+
+  <rect class="thumb" x="18" y="10" width="4" height="70" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1920"
+     height="1080"
+     viewBox="0 0 1920 1080"
+     cursor="pointer">
+
+    <defs>
+        <style>
+            .amd-logo {
+                transform-origin: 50% 50%;
+                transition: transform 0.25s cubic-bezier(.25,.8,.25,1),
+                            filter 0.25s ease;
+            }
+
+            svg:hover .amd-logo {
+                transform: scale(1.15);
+                filter: url(#amdGlow);
+            }
+        </style>
+
+        <filter id="amdGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="12" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- DARK BACKGROUND -->
+    <rect width="1920" height="1080" fill="#1E1E1E"/>
+
+    <!-- AMD LOGO (ONLY SYMBOL) CENTERED -->
+    <g class="amd-logo"
+       fill="#ffffff"
+       transform="translate(960 540) scale(6) translate(-70 -16)">
+
+        <!-- AMD ARROW SYMBOL -->
+        <polygon points="130.64 9.08 115.75 9.08 106.68 0 139.72 0 139.72 33.05 130.64 23.97 130.64 9.08"/>
+        <polygon points="115.74 23.98 115.74 10.9 106.4 20.24 106.4 33.33 119.48 33.33 128.82 23.98 115.74 23.98"/>
+    </g>
+
+</svg>
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#4CAF50"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <style>
+        .spin {
+            transform-origin: 50% 50%;
+            animation: rotate 1.2s linear infinite;
+        }
+
+        svg:hover .spin {
+            animation-duration: 0.6s;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+    </style>
+
+    <g class="spin">
+        <path d="M21 12a9 9 0 1 1-2.64-6.36"/>
+        <polyline points="21 3 21 9 15 9"/>
+    </g>
+</svg>
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    stroke="#2196F3"
+    fill="none"
+    stroke-width="2"
+    onclick="this.classList.toggle('run')"
+    cursor="pointer">
+
+    <style>
+        .icon {
+            transform-origin: 50% 50%;
+        }
+        .run .icon {
+            animation: spinOnce 0.8s ease-in-out;
+        }
+        @keyframes spinOnce {
+            0%   { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+    <g class="icon">
+        <path d="M21 12a9 9 0 1 1-2.64-6.36"/>
+        <polyline points="21 3 21 9 15 9"/>
+    </g>
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="980.000000pt" height="980.000000pt" viewBox="0 0 980.000000 980.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M6010 7145 c-701 -101 -1276 -184 -1277 -184 -2 -1 -3 -438 -3 -971
+l0 -970 1298 2 1297 3 3 1153 2 1152 -22 -1 c-13 -1 -597 -84 -1298 -184z"/>
+<path d="M3480 6785 c-509 -74 -944 -136 -968 -140 l-42 -6 2 -807 3 -807
+1000 0 1000 0 3 948 2 947 -37 -1 c-21 -1 -454 -61 -963 -134z"/>
+<path d="M2477 4773 c-4 -3 -7 -372 -7 -820 0 -643 3 -813 13 -813 6 -1 457
+-63 1002 -138 l990 -138 3 945 c1 521 0 952 -3 959 -3 9 -212 12 -998 12 -547
+0 -997 -3 -1000 -7z"/>
+<path d="M4730 3805 l0 -975 23 -4 c24 -6 2557 -356 2570 -356 4 0 6 519 5
+1153 l-3 1152 -1297 3 -1298 2 0 -975z"/>
+</g>
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="577.000000pt" height="433.000000pt" viewBox="0 0 577.000000 433.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,433.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1304 3703 c3 -21 6 -363 6 -761 l0 -722 758 2 757 3 0 755 0 755
+-764 3 -764 2 7 -37z"/>
+<path d="M2950 2980 l0 -760 758 2 757 3 0 755 0 755 -757 3 -758 2 0 -760z"/>
+<path d="M1310 1340 l0 -760 758 2 757 3 0 755 0 755 -757 3 -758 2 0 -760z"/>
+<path d="M2950 1340 l0 -760 758 2 757 3 0 755 -1 755 -757 3 -757 2 0 -760z"/>
+</g>
+</svg>
+
+<svg id="Layer_1"
+     data-name="Layer 1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 139.72 33.32"
+     cursor="pointer">
+
+    <defs>
+        <style>
+            .cls-1 { fill: #ffffff; }
+
+            .amd-logo {
+                transform-origin: 50% 50%;
+                transition: transform 0.22s cubic-bezier(.25,.8,.25,1),
+                            filter 0.22s ease;
+            }
+
+            svg:hover .amd-logo {
+                transform: scale(1.15) translateY(-1px);
+                filter: url(#amdGlow);
+            }
+        </style>
+
+        <filter id="amdGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="2.2" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <title>AMD-logo-white-v2</title>
+
+    <g class="amd-logo">
+        <path class="cls-1"
+              d="M33,31.14H25.21l-2.37-5.72H9.92L7.76,31.14H.14L11.78,2.26h8.34Zm-16.89-22L11.83,20.39h8.89Z"
+              transform="translate(-0.14 -0.03)"/>
+
+        <path class="cls-1"
+              d="M61.1,2.26h6.27V31.14h-7.2v-18l-7.79,9.06h-1.1L43.49,13.1v18h-7.2V2.26h6.27L51.83,13Z"
+              transform="translate(-0.14 -0.03)"/>
+
+        <path class="cls-1"
+              d="M85.61,2.26c10.54,0,16,6.56,16,14.48,0,8.3-5.25,14.4-16.77,14.4H72.86V2.26ZM80.06,25.85h4.7c7.24,0,9.4-4.91,9.4-9.15,0-5-2.67-9.15-9.48-9.15H80.06Z"
+              transform="translate(-0.14 -0.03)"/>
+
+        <polygon class="cls-1"
+                 points="130.64 9.08 115.75 9.08 106.68 0 139.72 0 139.72 33.05 130.64 23.97 130.64 9.08"/>
+
+        <polygon class="cls-1"
+                 points="115.74 23.98 115.74 10.9 106.4 20.24 106.4 33.33 119.48 33.33 128.82 23.98 115.74 23.98"/>
+    </g>
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="50.000000pt" height="48.000000pt" viewBox="0 0 50.000000 48.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M174 401 c-52 -32 -74 -68 -74 -123 0 -86 63 -121 146 -82 48 23 49
+30 4 26 -79 -8 -120 82 -66 144 41 49 119 32 147 -31 7 -15 8 -13 4 10 -13 68
+-95 96 -161 56z"/>
+<path d="M350 175 c-10 -12 -9 -15 8 -15 11 0 22 7 26 15 3 9 0 15 -8 15 -7 0
+-19 -7 -26 -15z"/>
+<path d="M127 89 c-10 -6 -27 -9 -38 -6 -10 3 -19 1 -19 -4 0 -15 78 -61 103
+-62 33 0 128 29 152 47 14 10 2 8 -40 -6 -46 -15 -73 -19 -115 -14 -51 6 -96
+26 -58 26 8 0 21 7 28 15 15 18 12 18 -13 4z"/>
+</g>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Kilit gövdesi -->
+  <rect x="30" y="45" width="60" height="50" rx="10" ry="10" fill="none" stroke="#4CAF50" stroke-width="5"/>
+  
+  <!-- Kilit kafesi -->
+  <path d="M40,45 a20,20 0 0,1 40,0" fill="none" stroke="#4CAF50" stroke-width="5"/>
+  
+  <!-- Stilize onay işareti (debloat/temiz) -->
+  <path d="M38,70 L52,85 L82,55" fill="none" stroke="#FFEB3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M80 10
+           L140 35
+           V80
+           C140 115 105 140 80 150
+           C55 140 20 115 20 80
+           V35 Z"
+        fill="url(#g)"/>
+
+  <!-- Pulse line -->
+  <polyline points="35,85 55,85 65,65 75,105 90,55 105,85 125,85"
+            fill="none"
+            stroke="#0f172a"
+            stroke-width="6"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="300"
+     height="120"
+     viewBox="0 0 395.4 155.9"
+     cursor="pointer">
+
+    <defs>
+        <style>
+            .intel-logo {
+                transform-origin: 50% 50%;
+                transition: transform 0.25s cubic-bezier(.25,.8,.25,1),
+                            filter 0.25s ease;
+            }
+
+            svg:hover .intel-logo {
+                transform: scale(1.15) translateY(-2px);
+                filter: url(#intelGlow);
+            }
+        </style>
+
+        <filter id="intelGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Intel logo group -->
+    <g class="intel-logo" transform="scale(0.5)">
+        <rect class="cls-2" x="4.7" y="5.2" width="28.1" height="28.1" fill="#00c7fd"/>
+        <path class="cls-1" d="M32.1,151.6V50.3H5.4v101.2h26.7v.1ZM208.9,152.6v-24.8c-3.9,0-7.2-.2-9.6-.6-2.8-.4-4.9-1.4-6.3-2.8-1.4-1.4-2.3-3.4-2.8-6.1-.4-2.5-.6-5.8-.6-9.8v-35.3h19.3v-22.9h-19.3V10.9h-26.7v97.9c0,8.3.7,15.3,2.1,20.9,1.4,5.5,3.8,10,7.1,13.4s7.7,5.8,13,7.3c5.4,1.5,12.2,2.2,20.3,2.2h3.5ZM361.7,151.6V3.1h-26.7v148.5h26.7ZM137.2,60.3c-7.4-8-17.8-12-31-12-6.4,0-12.3,1.3-17.5,3.9-5.3,2.6-9.7,6.2-13.3,10.8l-1.4,1.9v-14.6h-26.3v101.2h26.5v-53.9,3.7-1.8c.3-9.5,2.6-16.5,7-21,4.7-4.8,10.4-7.2,16.9-7.2,7.7,0,13.6,2.4,17.5,7,3.8,4.6,5.8,11.1,5.8,19.4h0v.3h0v53.5h26.9v-57.4c.1-14.4-3.7-25.8-11.1-33.8ZM321.2,100.8c0-7.3-1.3-14.1-3.8-20.5-2.6-6.3-6.2-11.9-10.7-16.7-4.6-4.8-10.1-8.5-16.5-11.2s-13.5-4-21.2-4c-7.3,0-14.2,1.4-20.6,4.1-6.4,2.8-12,6.5-16.7,11.2s-8.5,10.3-11.2,16.7c-2.8,6.4-4.1,13.3-4.1,20.6s1.3,14.2,3.9,20.6c2.6,6.4,6.3,12,10.9,16.7,4.6,4.7,10.3,8.5,16.9,11.2,6.6,2.8,13.9,4.2,21.7,4.2,22.6,0,36.6-10.3,45-19.9l-19.2-14.6c-4,4.8-13.6,11.3-25.6,11.3-7.5,0-13.7-1.7-18.4-5.2-4.7-3.4-7.9-8.2-9.6-14.1l-.3-.9h79.5v-9.5h0ZM241.9,91.5c0-7.4,8.5-20.3,26.8-20.4,18.3,0,26.9,12.9,26.9,20.3l-53.7.1ZM392.1,138.8c-.5-1.2-1.2-2.2-2.1-3.1-.9-.9-1.9-1.6-3.1-2.1s-2.5-.8-3.8-.8c-1.4,0-2.6.3-3.8.8-1.2.5-2.2,1.2-3.1,2.1-.9.9-1.6,1.9-2.1,3.1-.5,1.2-.8,2.5-.8,3.8s.3,2.6.8,3.8,1.2,2.2,2.1,3.1c.9.9,1.9,1.6,3.1,2.1s2.5.8,3.8.8c1.4,0,2.6-.3,3.8-.8,1.2-.5,2.2-1.2,3.1-2.1.9-.9,1.6-1.9,2.1-3.1.5-1.2.8-2.5.8-3.8s-.3-2.6-.8-3.8ZM390.5,145.8c-.4,1-1,1.9-1.7,2.6-.7.7-1.6,1.3-2.6,1.7s-2,.6-3.2.6c-1.1,0-2.2-.2-3.2-.6-1-.4-1.9-1-2.6-1.7s-1.3-1.6-1.7-2.6c-.4-1-.6-2-.6-3.2,0-1.1.2-2.2.6-3.2s1-1.9,1.7-2.6c.7-.7,1.6-1.3,2.6-1.7s2-.6,3.2-.6c1.1,0,2.2.2,3.2.6,1,.4,1.9,1,2.6,1.7s1.3,1.6,1.7,2.6c.4,1,.6,2,.6,3.2s-.2,2.2-.6,3.2ZM384.9,143.5c.8-.1,1.4-.4,1.9-.9s.8-1.2.8-2.2c0-1.1-.3-1.9-1-2.5-.6-.6-1.7-.9-3-.9h-4.4v11.3h2.1v-4.6h1.5l2.8,4.6h2.2l-2.9-4.8ZM383.8,141.8h-2.5v-3.2h2.5c.3,0,.6.1.9.2.3.1.5.3.6.5.2.2.2.5.2.9s-.1.7-.2.9c-.2.2-.4.4-.6.5-.3.1-.6.2-.9.2Z" fill="#000f28"/>
+    </g>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="117"
+     height="35"
+     viewBox="0 0 117 35"
+     fill="none"
+     cursor="pointer">
+
+    <defs>
+        <!-- Glow / depth -->
+        <filter id="nvidiaGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="2.2" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <style>
+            .nvidia-logo {
+                transform-origin: 50% 50%;
+                transition: transform 0.22s cubic-bezier(.25,.8,.25,1),
+                            filter 0.22s ease;
+            }
+
+            svg:hover .nvidia-logo {
+                transform: scale(1.15) translateY(-1px);
+                filter: url(#nvidiaGlow);
+            }
+        </style>
+    </defs>
+
+    <g class="nvidia-logo">
+        <!-- NVIDIA TEXT -->
+        <path d="M66.4201 15.476V29.238H70.2437V15.476H66.4201ZM36.3477 15.4573V29.238H40.2045V18.5408L43.2134 18.5513C44.2026 18.5513 44.8877 18.7928 45.3639 19.3097C45.9686 19.9653 46.2154 21.0212 46.2154 22.9532V29.238H49.9518V21.6243C49.9518 16.19 46.5447 15.4573 43.2122 15.4573H36.3477ZM72.5755 15.476V29.2368H78.7757C82.0795 29.2368 83.157 28.678 84.3241 27.4262C85.148 26.5465 85.6804 24.6168 85.6804 22.5075C85.6804 20.5732 85.2295 18.8477 84.4434 17.7732C83.0273 15.8517 80.987 15.476 77.9403 15.476H72.5755ZM76.367 18.472H78.0103C80.3949 18.472 81.9372 19.5605 81.9372 22.385C81.9372 25.2095 80.3949 26.2992 78.0103 26.2992H76.367V18.472ZM60.9085 15.476L57.7183 26.382L54.6613 15.476H50.5347L54.9011 29.2368H60.4104L64.8113 15.476H60.9096H60.9085ZM87.4591 29.2368H91.2827V15.476H87.458V29.2368H87.4591ZM98.176 15.4807L92.8377 29.2322H96.6073L97.4519 26.802H103.769L104.569 29.2322H108.661L103.283 15.4795H98.176V15.4807ZM100.657 17.9902L102.973 24.4325H98.2678L100.657 17.9902Z"
+              fill="black"/>
+
+        <!-- NVIDIA EYE -->
+        <path d="M11.6925 17.7697V15.8762C11.8738 15.8633 12.0563 15.8528 12.2422 15.847C17.3372 15.6837 20.68 20.2978 20.68 20.2978C20.68 20.2978 17.0699 25.3962 13.1992 25.3962C12.6415 25.3962 12.1423 25.3052 11.6925 25.1511V19.4077C13.6766 19.6515 14.0748 20.5417 15.2671 22.5623L17.919 20.2885C17.919 20.2885 15.9831 17.7067 12.7195 17.7067C12.3649 17.7067 12.0253 17.7323 11.6913 17.7685L11.6925 17.7697ZM11.6913 11.5128V14.342C11.8738 14.3268 12.0574 14.3152 12.241 14.3082C19.3259 14.0655 23.9425 20.2162 23.9425 20.2162C23.9425 20.2162 18.6408 26.7705 13.1166 26.7705C12.6105 26.7705 12.1366 26.7227 11.6913 26.6433V28.3922C12.0723 28.4412 12.4671 28.4703 12.8779 28.4703C18.0177 28.4703 21.7358 25.8021 25.3356 22.6428C25.9323 23.1281 28.3754 24.31 28.8781 24.828C25.4549 27.7412 17.4795 30.0885 12.9571 30.0885C12.521 30.0885 12.1022 30.0617 11.6913 30.022V32.479H31.2282V11.514H11.6925L11.6913 11.5128ZM11.6913 25.15V26.6433C6.93708 25.7812 5.6174 20.7575 5.6174 20.7575C5.6174 20.7575 7.89986 18.1862 11.6913 17.7697V19.4077C9.69462 19.165 8.14085 21.055 8.14085 21.055C8.14085 21.055 9.01183 24.2365 11.6925 25.1523L11.6913 25.15ZM3.24888 20.5417C3.24888 20.5417 6.06609 16.3148 11.6925 15.8773V14.3443C5.46134 14.853 0.0644531 20.2185 0.0644531 20.2185C0.0644531 20.2185 3.12036 29.2018 11.6925 30.0243V28.3945C5.40167 27.5895 3.24888 20.5417 3.24888 20.5417Z"
+              fill="#76B900"/>
+    </g>
+</svg>
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="60"
+    height="30"
+    viewBox="0 0 60 30"
+    cursor="pointer"
+    onclick="toggle(evt)">
+
+    <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+            <feOffset dx="0" dy="1"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <style>
+            .track { fill:#ccc; transition:fill .3s }
+            .thumb { fill:#fff; transition:transform .3s }
+            .on .track { fill:#4CAF50 }
+            .on .thumb { transform:translateX(30px) }
+        </style>
+    </defs>
+
+    <rect class="track" width="60" height="30" rx="15"/>
+    <circle class="thumb" cx="15" cy="15" r="13" filter="url(#shadow)"/>
+
+    <script type="application/ecmascript"><![CDATA[
+        function toggle(e) {
+            const svg = e.target.ownerSVGElement;
+            svg.classList.toggle("on");
+        }
+    ]]></script>
+</svg>
