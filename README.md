@@ -1,3 +1,5 @@
+<img width="526" height="526" alt="banner" src="https://github.com/user-attachments/assets/05564a87-fae1-45ee-802c-84f7dfc68fb6" />
+
 # Ultimate Optimizer
 
 Ultimate Optimizer is a premium Windows optimization tool that combines various tweaks from industry-standard tools into a modern, hardware-aware UI.
@@ -39,3 +41,4 @@ To build the EXE:
 ```bash
 build_exe.bat
 ```
+
